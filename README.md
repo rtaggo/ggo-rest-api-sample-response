@@ -648,7 +648,7 @@ Le point d'entrée principale est de l'api REST de géocodage/reverse est :
 
 https://ggo-rest-api.appspot.com/api/rest/geoservice/direction/isochrone
 
-`GET <BASE_REST_ENTRY_POINT>?center=<latitude,longitude>&time_limits=<time_ranges>&profile=<route_profile>`
+`GET <BASE_REST_ENTRY_POINT>?center=<latitude,longitude>&time_limits=<time_ranges>&profile=<route_profile>&substract_geometries=<true|false>`
 
 Le paramètre "time_limits" contient une liste des temps en minutes. 
 
@@ -656,9 +656,14 @@ Exemple pour calculer des isochrones de 5 et 10 minutes
 
 `time_limits=5,10`
 
-Le paramètre "profile" définit la méthode utilisée pour calculer les isochrones (si ce paramètre n'est pas précisé dans la requête, "driving-car" est utilisé par défaut)
+Le paramètre optionnel "profile" définit la méthode utilisée pour calculer les isochrones (si ce paramètre n'est pas précisé dans la requête, "driving-car" est utilisé par défaut)
 
 `profile=driving-car | foot-walking`
+
+Le paramètre optionnel "substract_geometries" indique s'il faut renvoyer des polygones creux (par défaut: true)
+
+`substract_geometries= true | false`
+
 
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection contennant l'ensemble des isochrones triés par intervalle de temps décroissant
