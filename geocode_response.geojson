@@ -1,125 +1,125 @@
 ﻿{
-    "geocoding": {
-        "version": "0.2",
-        "attribution": "http://192.168.2.20:3100/attribution",
-        "query": {
-            "text": "87 avenue d'italie, paris",
-            "size": 10,
-            "private": false,
-            "boundary.country": [
-                "FRA"
-            ],
-            "lang": {
-                "name": "English",
-                "iso6391": "en",
-                "iso6393": "eng",
-                "defaulted": true
-            },
-            "querySize": 20,
-            "parser": "libpostal",
-            "parsed_text": {
-                "number": "87",
-                "street": "avenue d'italie",
-                "city": "paris"
-            }
-        },
-        "engine": {
-            "name": "Pelias",
-            "author": "Mapzen",
-            "version": "1.0"
-        },
-        "timestamp": 1573030125358
+  "geocoding":{
+    "version":"0.2",
+    "attribution":"http://192.168.2.20:3100/attribution",
+    "query":{
+      "text":"87 avenue d'italie, paris",
+      "size":10,
+      "private":false,
+      "boundary.country":[
+        "FRA"
+      ],
+      "lang":{
+        "name":"English",
+        "iso6391":"en",
+        "iso6393":"eng",
+        "defaulted":true
+      },
+      "querySize":20,
+      "parser":"libpostal",
+      "parsed_text":{
+        "number":"87",
+        "street":"avenue d'italie",
+        "city":"paris"
+      }
     },
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.358434,
-                    48.824031
-                ]
-            },
-            "properties": {
-                "id": "fr/paris:540a04e70ad9a088",
-                "gid": "openaddresses:address:fr/paris:540a04e70ad9a088",
-                "layer": "address",
-                "source": "openaddresses",
-                "source_id": "fr/paris:540a04e70ad9a088",
-                "name": "87 Av d'Italie",
-                "housenumber": "87",
-                "street": "Av d'Italie",
-                "postalcode": "75013",
-                "confidence": 1,
-                "match_type": "exact",
-                "accuracy": "point",
-                "country": "France",
-                "country_gid": "whosonfirst:country:85633147",
-                "country_a": "FRA",
-                "macroregion": "Ile-of-France",
-                "macroregion_gid": "whosonfirst:macroregion:404227465",
-                "macroregion_a": "IF",
-                "region": "Paris",
-                "region_gid": "whosonfirst:region:85683497",
-                "region_a": "VP",
-                "localadmin": "Paris",
-                "localadmin_gid": "whosonfirst:localadmin:1159322569",
-                "locality": "Paris",
-                "locality_gid": "whosonfirst:locality:101751119",
-                "borough": "13th Arrondissement",
-                "borough_gid": "whosonfirst:borough:1158894257",
-                "continent": "Europe",
-                "continent_gid": "whosonfirst:continent:102191581",
-                "label": "87 Av d'Italie, Paris, France"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.358425,
-                    48.824027
-                ]
-            },
-            "properties": {
-                "id": "node/2540682965",
-                "gid": "openstreetmap:address:node/2540682965",
-                "layer": "address",
-                "source": "openstreetmap",
-                "source_id": "node/2540682965",
-                "name": "87 Avenue d'Italie",
-                "housenumber": "87",
-                "street": "Avenue d'Italie",
-                "confidence": 1,
-                "match_type": "exact",
-                "accuracy": "point",
-                "country": "France",
-                "country_gid": "whosonfirst:country:85633147",
-                "country_a": "FRA",
-                "macroregion": "Ile-of-France",
-                "macroregion_gid": "whosonfirst:macroregion:404227465",
-                "macroregion_a": "IF",
-                "region": "Paris",
-                "region_gid": "whosonfirst:region:85683497",
-                "region_a": "VP",
-                "localadmin": "Paris",
-                "localadmin_gid": "whosonfirst:localadmin:1159322569",
-                "locality": "Paris",
-                "locality_gid": "whosonfirst:locality:101751119",
-                "borough": "13th Arrondissement",
-                "borough_gid": "whosonfirst:borough:1158894257",
-                "continent": "Europe",
-                "continent_gid": "whosonfirst:continent:102191581",
-                "label": "87 Avenue d'Italie, Paris, France"
-            }
-        }
-    ],
-    "bbox": [
-        2.358425,
-        48.824027,
-        2.358434,
-        48.824031
-    ]
+    "engine":{
+      "name":"Pelias",
+      "author":"Mapzen",
+      "version":"1.0"
+    },
+    "timestamp":1573030125358
+  },
+  "type":"FeatureCollection",
+  "features":[
+    {
+      "type":"Feature",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          2.358434,
+          48.824031
+        ]
+      },
+      "properties":{
+        "id":"fr/paris:540a04e70ad9a088",
+        "gid":"openaddresses:address:fr/paris:540a04e70ad9a088",
+        "layer":"address",
+        "source":"openaddresses",
+        "source_id":"fr/paris:540a04e70ad9a088",
+        "name":"87 Av d'Italie",
+        "housenumber":"87",
+        "street":"Av d'Italie",
+        "postalcode":"75013",
+        "confidence":1,
+        "match_type":"exact",
+        "accuracy":"point",
+        "country":"France",
+        "country_gid":"whosonfirst:country:85633147",
+        "country_a":"FRA",
+        "macroregion":"Ile-of-France",
+        "macroregion_gid":"whosonfirst:macroregion:404227465",
+        "macroregion_a":"IF",
+        "region":"Paris",
+        "region_gid":"whosonfirst:region:85683497",
+        "region_a":"VP",
+        "localadmin":"Paris",
+        "localadmin_gid":"whosonfirst:localadmin:1159322569",
+        "locality":"Paris",
+        "locality_gid":"whosonfirst:locality:101751119",
+        "borough":"13th Arrondissement",
+        "borough_gid":"whosonfirst:borough:1158894257",
+        "continent":"Europe",
+        "continent_gid":"whosonfirst:continent:102191581",
+        "label":"87 Av d'Italie, Paris, France"
+      }
+    },
+    {
+      "type":"Feature",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          2.358425,
+          48.824027
+        ]
+      },
+      "properties":{
+        "id":"node/2540682965",
+        "gid":"openstreetmap:address:node/2540682965",
+        "layer":"address",
+        "source":"openstreetmap",
+        "source_id":"node/2540682965",
+        "name":"87 Avenue d'Italie",
+        "housenumber":"87",
+        "street":"Avenue d'Italie",
+        "confidence":1,
+        "match_type":"exact",
+        "accuracy":"point",
+        "country":"France",
+        "country_gid":"whosonfirst:country:85633147",
+        "country_a":"FRA",
+        "macroregion":"Ile-of-France",
+        "macroregion_gid":"whosonfirst:macroregion:404227465",
+        "macroregion_a":"IF",
+        "region":"Paris",
+        "region_gid":"whosonfirst:region:85683497",
+        "region_a":"VP",
+        "localadmin":"Paris",
+        "localadmin_gid":"whosonfirst:localadmin:1159322569",
+        "locality":"Paris",
+        "locality_gid":"whosonfirst:locality:101751119",
+        "borough":"13th Arrondissement",
+        "borough_gid":"whosonfirst:borough:1158894257",
+        "continent":"Europe",
+        "continent_gid":"whosonfirst:continent:102191581",
+        "label":"87 Avenue d'Italie, Paris, France"
+      }
+    }
+  ],
+  "bbox":[
+    2.358425,
+    48.824027,
+    2.358434,
+    48.824031
+  ]
 }
