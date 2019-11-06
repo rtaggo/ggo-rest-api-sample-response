@@ -14,7 +14,7 @@ https://ggo-rest-api.appspot.com/api/rest/geoservice/geocode
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "features" contient la liste des addresses possibles
 
-```json
+```js
 {
     "geocoding": {
         // informations concernant la requête
