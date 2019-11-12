@@ -46,7 +46,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 `https://ggo-rest-api.appspot.com/api/rest/sirene/mynetwork?enseigne=Maisons du monde&univers=Meuble`
 
 **Réponse**
-```json
+```js
 {
   "type": "FeatureCollection",
   "features": [{
@@ -116,7 +116,7 @@ Corps:
 ```
 
 **Réponse**
-```json
+```js
 {
   "type": "FeatureCollection",
   "features": [{
