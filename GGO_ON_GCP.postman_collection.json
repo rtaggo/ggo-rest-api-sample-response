@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "7a20d0ba-1f73-4df0-a8b6-ce520a687efa",
+		"name": "GGO ON GCP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ggo-rest-api",
+			"item": [
+				{
+					"name": "sirene",
+					"item": [
+						{
+							"name": "/univers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/sirene/univers",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"sirene",
+										"univers"
+									]
+								},
+								"description": "Liste des univers"
+							},
+							"response": []
+						},
+						{
+							"name": "/mynetwork",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/sirene/mynetwork?enseigne=Maisons du monde&univers=Meuble",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"sirene",
+										"mynetwork"
+									],
+									"query": [
+										{
+											"key": "enseigne",
+											"value": "Maisons du monde"
+										},
+										{
+											"key": "univers",
+											"value": "Meuble"
+										}
+									]
+								},
+								"description": "Mon réseau (enseigne=Maisons du monde\", univers=\"Meuble\")"
+							},
+							"response": []
+						},
+						{
+							"name": "/mycompetitors",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n \"enseigne\" : \"Maisons du monde\",\n \"univers\": \"Meuble\",\n \"isochonie\": {\"coordinates\":[[[2.336262,48.827083],[2.339893,48.819938],[2.343796,48.816721],[2.35376,48.812841],[2.361552,48.811577],[2.361896,48.811685],[2.368695,48.814638],[2.36898,48.814858],[2.375565,48.823393],[2.374865,48.829338],[2.374691,48.829654],[2.370948,48.836137],[2.360838,48.838949],[2.351576,48.837503],[2.350892,48.837083],[2.344003,48.830957],[2.336314,48.82744],[2.336262,48.827083]]],\"type\":\"Polygon\"}\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/sirene/mycompetitors",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"sirene",
+										"mycompetitors"
+									]
+								},
+								"description": "see the request body for details"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "geocode",
+					"item": [
+						{
+							"name": "/search",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/geoservice/geocode/search?q=87 avenue d'italie, paris",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"geoservice",
+										"geocode",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "87 avenue d'italie, paris"
+										}
+									]
+								},
+								"description": "Search for an address"
+							},
+							"response": []
+						},
+						{
+							"name": "/reverse",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/geoservice/geocode/reverse?lat= 48.8259584&lng=2.3535616",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"geoservice",
+										"geocode",
+										"reverse"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": " 48.8259584"
+										},
+										{
+											"key": "lng",
+											"value": "2.3535616"
+										}
+									]
+								},
+								"description": "Get address from lat/lng"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "isochrone",
+					"item": [
+						{
+							"name": "/isochrone",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://ggo-rest-api.appspot.com/api/rest/geoservice/direction/isochrone?center=48.8240267,2.3584248&time_limits=5",
+									"protocol": "https",
+									"host": [
+										"ggo-rest-api",
+										"appspot",
+										"com"
+									],
+									"path": [
+										"api",
+										"rest",
+										"geoservice",
+										"direction",
+										"isochrone"
+									],
+									"query": [
+										{
+											"key": "center",
+											"value": "48.8240267,2.3584248"
+										},
+										{
+											"key": "time_limits",
+											"value": "5"
+										}
+									]
+								},
+								"description": "Isochrones de 5 minutes à partir des coordonnées 48.8240267,2.358424"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
