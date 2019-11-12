@@ -98,7 +98,7 @@ Corps de la requête
 {
  "enseigne" : "<enseigne>",
  "univers": "<univers>",
- "isochonie": la géométrie de l'isochronie
+ "isochonie": {... } // la géométrie de l'isochronie
 }
 ```
 
