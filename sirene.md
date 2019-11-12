@@ -94,7 +94,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 
 Corps de la requête
 
-```json
+```js
 {
  "enseigne" : "<enseigne>",
  "univers": "<univers>",
