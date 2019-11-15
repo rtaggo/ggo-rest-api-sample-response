@@ -1,5 +1,5 @@
 ﻿# Gécodage
-`GET <BASE_REST_ENTRY_POINT>/search?q=<lookup_address>`
+`GET <BASE_API_ENTRY_POINT>/geoservice/geocode/search?q=<lookup_address>`
 
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "features" contient la liste des addresses possibles
@@ -18,7 +18,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/geoservice/geocode/search?q=87 avenue d'italie, paris`
+`https://ggo-rest-api.appspot.com/api/geoservice/geocode/search?q=87 avenue d'italie, paris`
 
 **Réponse**
 ```json
@@ -150,7 +150,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 ```
 
 # Reverse Géocodage
-`GET <BASE_REST_ENTRY_POINT>/reverse?lat=<latitude>&lng=<longitude>`
+`GET <BASE_API_ENTRY_POINT>/geoservice/geocode/reverse?lat=<latitude>&lng=<longitude>`
 
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "features" contient la liste des addresses possibles.
@@ -169,7 +169,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/geoservice/geocode/reverse?lat= 48.8259584&lng=2.3535616`
+`https://ggo-rest-api.appspot.com/api/geoservice/geocode/reverse?lat= 48.8259584&lng=2.3535616`
 
 **Réponse**
 ```json

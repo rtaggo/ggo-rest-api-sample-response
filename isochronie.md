@@ -1,11 +1,11 @@
 ﻿# Isochronie
 
 
-Le point d'entrée principale est de l'api REST de calcul d'isochronie est :
+Le point d'entrée principale est de l'api REST de calcul d'isochronie (nommé 'BASE_SERVICE_ENTRY_POINT') est:
 
-https://ggo-rest-api.appspot.com/api/rest/geoservice/direction/isochrone
+`<BASE_API_ENTRY_POINT>/geoservice/direction/isochrone`
 
-`GET <BASE_REST_ENTRY_POINT>?center=<latitude,longitude>&time_limits=<time_ranges>&profile=<route_profile>&substract_geometries=<true|false>`
+`GET <BASE_SERVICE_ENTRY_POINT>?center=<latitude,longitude>&time_limits=<time_ranges>&profile=<route_profile>&substract_geometries=<true|false>`
 
 Le paramètre "time_limits" contient une liste des temps en minutes. 
 
@@ -39,7 +39,7 @@ La requête renvoie un GeoJSON de type FeatureCollection contennant l'ensemble d
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/geoservice/direction/isochrone?center=48.8240267,2.3584248&time_limits=5`
+`https://ggo-rest-api.appspot.com/api/geoservice/direction/isochrone?center=48.8240267,2.3584248&time_limits=5`
 
 **Réponse**
 ```json

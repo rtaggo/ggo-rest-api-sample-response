@@ -1,18 +1,18 @@
 ﻿# Recherche dans la base SIRENE
 
-Le point d'entrée principale est de l'api REST de recherche dans la base SIRENE est :
+Le point d'entrée principale est de l'api REST de recherche dans la base SIRENE (nommé 'BASE_SERVICE_ENTRY_POINT') est :
 
-https://ggo-rest-api.appspot.com/api/rest/sirene
+`<BASE_API_ENTRY_POINT>/sirene`
 
 ## Univers
 
-`GET <BASE_REST_ENTRY_POINT>/univers`
+`GET <BASE_SERVICE_ENTRY_POINT>/univers`
 
 Renvoie la liste des univers en tant que liste de chaîne de caractères.
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/sirene/univers`
+`https://ggo-rest-api.appspot.com/api/sirene/univers`
 
 **Réponse**
 ```json
@@ -36,14 +36,14 @@ Renvoie la liste des univers en tant que liste de chaîne de caractères.
 
 ## Mon réseau
 
-`GET <BASE_REST_ENTRY_POINT>/mynetwork?enseigne=<enseigne>&univers=<univers>`
+`GET <BASE_SERVICE_ENTRY_POINT>/mynetwork?enseigne=<enseigne>&univers=<univers>`
 
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "features" contient la liste des établissements pour une enseigne et un univers donnés.
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/sirene/mynetwork?enseigne=Maisons du monde&univers=Meuble`
+`https://ggo-rest-api.appspot.com/api/sirene/mynetwork?enseigne=Maisons du monde&univers=Meuble`
 
 **Réponse**
 ```js
@@ -87,7 +87,7 @@ La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "fe
 
 ## Ma Concurrence
 
-`POST <BASE_REST_ENTRY_POINT>/mycompetitors`
+`POST <BASE_SERVICE_ENTRY_POINT>/mycompetitors`
 
 **Réponse**
 La requête renvoie un GeoJSON de type FeatureCollection dont la propriété "features" contient la liste des établissements concurrence pour une enseigne, un univers donnés et une zone
@@ -104,7 +104,7 @@ Corps de la requête
 
 **Exemple**
 
-`https://ggo-rest-api.appspot.com/api/rest/sirene/mycompetitors`
+`https://ggo-rest-api.appspot.com/api/sirene/mycompetitors`
 
 Corps:
 ```json
